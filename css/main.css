@@ -1,0 +1,320 @@
+@charset "utf-8";
+
+/*서브공통*/
+.subMain{
+	background:url(../images/sub/subvisual_bg1.jpg) no-repeat center center;
+	height:560px;
+	position:relative;
+}
+
+
+.subMainText{
+	color:#fff;
+	text-align:center;
+	padding-top:1px;
+	position: absolute;
+	top:50%;
+	margin-top:-167px;
+	right:50%;
+	margin-right:-320px;
+}
+.subMainText h2{
+	font-size:20px;
+	color:rgba(255,255,255,0.5);
+	font-weight:200; 
+	background:url(../images/sub/bracket_title.png) no-repeat center center;
+	letter-spacing:15px;
+	height:44px;
+	line-height:44px; 
+	
+}
+.subMainText p{
+	font-size:50px;
+	letter-spacing:25px; 
+	text-shadow:2px 2px 2px rgba(0,0,0,0.2); 
+   /*text-shadow: x값 y값 퍼지는정도 컬러*/
+}
+.subMainText .bigText{
+	font-size:56px;
+	font-weight:500;
+	
+}
+.subMainText .bigText span{
+	color:#f47a20;
+	position:relative;
+}
+
+.bigText span:after{
+	content:"";
+	width:175px;
+	height:1px;
+	background:#f47a20;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+
+.subNav{
+	width:1200px;
+	height:59px;
+	line-height:59px;
+	background:#fff;
+	position:absolute;
+	left:50%;
+	margin-left:-600px; /*가로값의 반만큼 빠져야함*/
+	bottom:0;
+	color:#333;
+	border-bottom:1px solid #ddd;
+}
+.subNav>li{
+	float:left;
+	width:110px;
+	text-align:center;
+}
+.subNav li a{
+	display:block;
+	border:1px solid #ddd;
+	border-top:0;
+}
+.subNav .subNavHome{
+	width:59px;
+	height:59px;
+	background:#f47a20 url(../images/sub/ico_home.png) no-repeat;
+	text-indent:-9999px;
+	border-right:0;
+	
+}
+.subNav .subNavMenu{
+	width:200px;
+	text-align:left;
+	text-indent:20px;
+}
+
+
+
+.subNavMenu>a{
+	background:url(../images/sub/ar_snb.png) no-repeat right center;
+
+}
+
+.snb{
+	background:#fff;
+	max-height:0;
+	overflow:hidden;
+	transition:max-height 0.3s;
+	box-shadow:2px 2px 3px rgba(0,0,0,0.1);
+
+}
+
+
+.snb li:hover a{
+	background:url(../images/sub/ar_snb.png) no-repeat right center;
+}
+
+.subNavMenu:hover .snb{
+	max-height:500px;
+}
+
+
+
+
+/*우담소개페이지*/
+
+.comCon01{
+	background:url(../images/sub/bg_introduction_info.png) no-repeat right bottom;
+	height:780px;
+	padding-top:50px;
+}
+.comCon01 h2{
+
+	font-size:35px;
+	font-weight:400;
+}
+.comCon01 h2:before{
+	content:"";
+	display:block;
+	width:30px;
+	height:2px;
+	background:#333;
+}
+
+
+
+.comInfo{
+	margin-left:10px;
+	margin-top:30px;
+}
+.comInfo dt{
+	font-size:20px;
+	margin-bottom:20px;
+}
+.comInfo dd{
+	font-size:14px;
+	font-weight:300;
+	margin:10px 0;
+}
+.comInfo span{
+	display:inline-block;
+	vertical-align:top;
+	color:#6c6c6c;
+}
+.comInfo .infoTit{
+	width:80px;
+	position:relative;
+	margin-right:10px;
+	color:#333;
+}
+
+.comInfo .infoTit:after{
+	content:"";
+	display:inline-block;
+	width:1px;
+	height:10px;
+	background:#ccc;
+	position:absolute;
+	right:0;
+	top:50%;
+	margin-top:-5px;
+}
+
+
+
+
+
+.emailBtn{
+	background:url(../images/sub/bg_sendemail.png) no-repeat right 2px;
+	font-size:13px;
+	width:110px;
+	height:25px;
+	line-height:25px;
+	border:1px solid #ccc;
+	text-align:center;
+	margin-left:10px;
+	transition:border-color 0.3s,background-image 0.3s;
+
+}
+
+.emailBtn:hover{
+	border-color:#333;
+	background-image:url(../images/sub/bg_sendemail_on.png);
+}
+
+.emailBtn a{
+	color:#6c6c6c;
+}
+
+
+.con01Text{
+	margin-top:130px;
+	margin-left:70px;
+}
+.con01Text h3{
+	color:#fff;
+	font-size:25px;
+	font-weight:400;
+	margin-bottom:20px;
+}
+.con01Text p{
+	color:#949494;
+	font-size:13px;
+}
+
+
+
+.comCon02{
+	margin:50px 0;
+}
+.comSubTit{}
+.comSubTit span{
+	color:#7d7d7d;
+	font-size:14px;
+	font-weight:300;
+	vertical-align:middle;
+}
+.comSubTit .title{
+	color:#333;
+	font-size:20px;
+}
+
+.comSubTit .title:after{
+	content:"";
+	display:inline-block;
+	vertical-align:middle;
+	width:1px;
+	height:10px;
+	background:#ccc;
+	margin:0 15px;
+	
+}
+
+
+.con02List{
+	margin-top:30px;
+}
+.con02List li{
+	width:200px;
+	float:left;
+	text-align:center;
+	font-size:14px;
+	font-weight:300;
+	color:#333;
+}
+.con02List img{}
+.con02List li p{
+	margin:8px 0;
+}
+
+
+
+
+
+/*사업내용*/
+
+.comCon03{}
+
+.con03List{
+	margin-top:20px;	
+}
+.con03List li{
+	width:270px;
+	float:left;
+	font-size:14px;
+	margin-top:30px;
+	font-weight:300;
+	margin-right:40px;
+}
+
+
+.con03List li:nth-child(4n){
+	margin-right:0;
+}
+
+.con03List img{
+	width:100%;
+}
+.con03List p{
+	margin-top:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
